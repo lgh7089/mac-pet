@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>天气 · 设置城市</title>
+  <link rel="stylesheet" href="city.css" />
+</head>
+<body>
+  <div class="head">
+    <div class="title">天气位置</div>
+    <div class="sub" id="current">正在读取…</div>
+  </div>
+
+  <div class="body">
+    <input id="keyword" type="text" spellcheck="false" placeholder="输入城市名，比如 杭州、Tokyo" />
+    <div id="results" class="results"></div>
+    <div id="hint" class="hint">回车搜索，点选结果即可保存</div>
+  </div>
+
+  <div class="foot">
+    <button id="auto" class="ghost">重新自动定位</button>
+    <button id="close" class="primary">关闭</button>
+  </div>
+
+  <script src="city.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    />
+    <title>和小慧聊天</title>
+    <link rel="stylesheet" href="./chat.css" />
+  </head>
+  <body>
+    <header id="titlebar">
+      <img id="avatar" src="../assets/girl/idle_0.png" alt="小慧" />
+      <div class="who">
+        <div class="name" id="name" title="点一下改名字">小慧</div>
+        <div class="status" id="status">正在唤醒…</div>
+      </div>
+    </header>
+
+    <main id="messages"></main>
+
+    <footer id="composer">
+      <textarea id="input" rows="1" placeholder="和小慧说点什么…（回车发送，Shift+回车换行）"></textarea>
+      <button id="send" title="发送">↑</button>
+    </footer>
+
+    <script src="./chat.js"></script>
+  </body>
+</html>
