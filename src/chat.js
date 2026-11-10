@@ -13,7 +13,8 @@
   const list = document.getElementById('messages');
   const input = document.getElementById('input');
   const sendBtn = document.getElementById('send');
-  const statusEl = document.getElementById('status');
+  // 顶部栏已精简为纯 logo，不再有名字/状态元素，用空占位兜底避免报错
+  const statusEl = document.getElementById('status') || { textContent: '' };
   let nameEl = document.getElementById('name');
 
   /* Windows 用系统标题栏，样式上少留一块交通灯的位置 */

@@ -31,65 +31,24 @@ body {
 #titlebar {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 30px 16px 10px 74px;
+  justify-content: center;
+  height: 52px;
+  padding: 0 16px;
   -webkit-app-region: drag;
-  background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(200, 170, 140, 0.16);
+  background: #1e2a5e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 /* Windows：系统自带标题栏，不需要给交通灯留空白 */
 body.win #titlebar {
-  padding: 10px 16px;
+  height: 40px;
 }
 
-#avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: #fff;
-  border: 1px solid var(--line);
+#logo {
+  width: 34px;
+  height: 48px;
   object-fit: contain;
-  padding: 2px;
-}
-
-.who {
-  line-height: 1.25;
-}
-
-.name {
-  font-size: 13.5px;
-  font-weight: 600;
-  cursor: text;
   -webkit-app-region: no-drag;
-  border-radius: 4px;
-  padding: 0 2px;
-}
-
-.name:hover {
-  color: #c2553a;
-  background: rgba(240, 180, 156, 0.16);
-}
-
-#nameinput {
-  width: 116px;
-  font-size: 13.5px;
-  font-weight: 600;
-  font-family: inherit;
-  color: var(--brown);
-  background: #fff;
-  border: 1px solid #f0b49c;
-  border-radius: 6px;
-  padding: 1px 5px;
-  outline: none;
-  user-select: text;
-  -webkit-user-select: text;
-  -webkit-app-region: no-drag;
-}
-
-.status {
-  font-size: 11px;
-  color: var(--muted);
 }
 
 /* ================= 消息区 ================= */
